@@ -1,0 +1,66 @@
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-card_card__mz7sa>div {
+    display: flex;
+}
+
+.content_before_achievements {
+    min-width: 380px;
+}
+
+.bage-img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+
+.title-bage {
+    padding-top: 10px;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    /* Выводим текст */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    width: 300px;
+    /* Ширина подсказки */
+    right: 10px;
+    top: 300px;
+    /* Положение подсказки */
+    background: #3989c9;
+    /* Синий цвет фона */
+    color: #fff;
+    /* Цвет текста */
+    padding: 0.5em;
+    /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Параметры тени */
+    pointer-events: none;
+    /* Подсказка */
+    opacity: 0;
+    /* Подсказка невидима */
+    transition: 1s;
+    /* Время появления подсказки */
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    /* Показываем подсказку */
+    top: 16em;
+    /* Положение подсказки */
+}
+
+.achievements_YURL {
+    display: flex;
+}
+
+
+
+.flex-item {
+    display: flex;
+    min-width: none;
+    flex-direction: column;}
